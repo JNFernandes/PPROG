@@ -1,0 +1,21 @@
+@startuml
+class Empregado {
+    - primeiroNome : String
+    - ultimoNome : String
+    - dataContrato : Data
+    - horaEntrada : Tempo
+    - horaSaida : Tempo
+
+    + calcularNumeroHorasTrabalho()
+    + tempoQueFoiContrato()
+}
+
+class Data {
+}
+
+class Tempo {
+}
+
+Empregado *-- Tempo
+Empregado *-- Data
+@enduml
