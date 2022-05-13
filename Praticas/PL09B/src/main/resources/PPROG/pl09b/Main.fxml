@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600.0" prefWidth="763.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PPROG.pl09b.Controller">
+   <bottom>
+      <Button fx:id="increment" mnemonicParsing="false" onAction="#increment" prefHeight="27.0" prefWidth="206.0" text="Click Here!" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="34.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="40.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+   <center>
+      <Label text="Number of clicks:">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+   </center>
+   <right>
+      <Label fx:id="counter" alignment="CENTER_RIGHT" contentDisplay="RIGHT" style="-fx-alignment: center;" text="0" BorderPane.alignment="CENTER_LEFT">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+   </right>
+</BorderPane>
